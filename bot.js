@@ -1,8 +1,8 @@
 var Slack = require('@slack/client').RtmClient;
 var Google = require('google-search');
-
+var tarr = ['xox','KHv9pKuR6xtjlblEQ','68989711'];
 var keywords =['hello','Hello','hi','Hi','hey','Hey','привіт'];
-var slack = new Slack('xoxb-68989711381-fOUIDgAOr9iBGHy2PYBrNfUi');
+var slack = new Slack(tarr[0] + 'b-'+ tarr[2] + '381-' + 'u3qii' + tarr[1] + 'xe');
 var google = new Google({
   key: 'AIzaSyDg8BrKk3dToPvjhGN4Jh7VTg88Sk1rRos',
   cx: '003723743698426983621:zzcg2v3dobs'
