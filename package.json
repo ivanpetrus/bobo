@@ -1,0 +1,15 @@
+{
+  "name": "bobo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan Petrus",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/client": "^3.5.4",
+    "google-search": "^0.0.4"
+    }
+}
