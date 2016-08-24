@@ -1,3 +1,4 @@
+var express = require('express');
 var Slack = require('@slack/client').RtmClient;
 var Google = require('google-search');
 var tarr = ['xox','KHv9pKuR6xtjlblEQ','68989711'];
@@ -7,7 +8,8 @@ var google = new Google({
   key: 'AIzaSyDg8BrKk3dToPvjhGN4Jh7VTg88Sk1rRos',
   cx: '003723743698426983621:zzcg2v3dobs'
 });
-
+var app = express();
+var port = process.env.PORT || 3000;
 slack.on('open', function() {
     console.log('Connected');
 
@@ -71,3 +73,6 @@ slack.on('message', function(message) {
 });
 
 slack.start();
+app.listen(port, function () {
+  console.log('bot listening on port ' + port);
+});
